@@ -1,0 +1,283 @@
+body{
+	margin: 0;
+	position: relative;
+	color: aliceblue;
+	background-color: oklch(48.204% 0.09008 165.741);
+}
+
+#Home{
+	height: auto;
+	background-color: rgb(77, 134, 106); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, rgb(71, 150, 120), rgb(26, 107, 100));
+	margin-bottom: 10vh;
+}
+#navbarContainer{
+	/* position: fixed; */
+	height: 110px;
+	width: 100vw;
+	background-color: rgb(15, 112, 112);
+}
+#navbar{
+	/* position: fixed; */
+	margin-left: 35vw ;
+	height: auto;
+	width: 30vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1300px) {
+  #navbar {
+	margin-left: 30vw;
+	width: 40vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #navbar {
+	margin-left: 25vw;
+	width: 50vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navbar {
+	margin-left: 20vw;
+	width: 60vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  #navbar {
+	margin-left: 10vw;
+	width: 80vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  #navbar {
+	margin-left: 5vw;
+	width: 90vw;
+  }
+}
+#navbar a{
+	text-decoration: none;
+	padding-bottom: 4px;
+	border-bottom: 4px solid rgb(179, 165, 88);
+}
+#navbar img{
+	height: 32px;
+	width: 32px;
+}
+.hide{
+	display: none;
+}
+#navbar p:hover +.hide{
+	display: block;
+	
+	cursor: pointer;
+	color: rgb(201, 201, 178);
+}
+#navbar p{
+	position: relative;
+	margin-left: -3px;
+	color: gold;
+	text-align: center;
+}
+#nameRoleAndphoto{
+	padding-bottom: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#photo{
+	margin-top: 6vh;
+	margin-left:2vw;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+#name{
+ margin-top: 5vh;
+ margin-left: 2vw;
+ margin-bottom: 10px;
+ font-size: 30px;
+ color: whitesmoke;
+}
+#role{
+margin-left: 2vw;
+font-size: 20px;
+color: rgb(59, 221, 167);
+}
+.area{
+   margin-left: 15vw;
+   margin-right: 15vw;
+   margin-top: 5vh;
+   padding-top: 5vh;
+}
+.heading{
+	align-items: center;
+	font-size: 25px;
+	color: rgb(194, 140, 89);
+	margin-bottom: 4px;
+	/* padding-bottom: 4px; */
+	border-bottom: 4px solid rgb(142, 142, 170);
+}
+.detail{
+	font-size: 25px;
+}
+#downloadCV{
+	/* right: 0; */
+	margin: 2vh 0vw 0vh 2vw;
+}
+
+#skillContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+}
+@media screen and (max-width: 1025px){
+	#skillContainer{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+	}	
+}
+#skillContainer img{
+	Height: 100px;
+	width: 100px;
+}
+.individualSkill{
+	display: flex;
+	width: 20vw;
+	height: 20vh;
+	text-align: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+.individualSkill span{
+	padding-left: 30px;
+	font-size: 30px;
+}
+#experienceDetail li{
+	font-size: 20px;
+}
+#projectArea{
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
+}
+#PROJECTSs{
+	margin-bottom: 5vh;
+}
+.project{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+.project img{
+	height: 300px;
+	width: 480px;
+}
+.projectTitle{
+	font-size: 40px;
+	margin-bottom: 20px;
+	color: rgb(230, 127, 127);
+}
+.projectDescription{
+	height: 300px;
+	width: 480px;
+	margin-left: 60px;
+	display: flex;
+	flex-direction: column;
+	font-size: 30px;
+	color: rgb(127, 218, 230);
+	text-align: start;
+	/* text-justify: auto; */
+}
+@media screen and (max-width: 1380px) {
+  .project{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+	.projectDescription{
+		height: 300px;
+		width: 480px;
+		margin-top: 60px;
+		margin-left: 0px;
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+		color: rgb(127, 218, 230);
+		text-align: start;
+		text-justify: auto;
+	}
+}
+.educationDetail{
+	margin-top: 30px;
+}
+
+/* --------------  Contact Section ----------------*/
+
+.contact-heading{
+	color: gold;;
+	font-size: 30px;
+	text-align: center;
+}
+#Contact{
+	margin: 10vh 0vw 0vh 0vw;
+	color:gold;
+	background-color: rgb(15, 112, 112);
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+#icon{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#icon li{
+
+}
+
+#icon img{
+	height: 30px;
+	width: 30px;
+	margin: 5px;
+	margin-top: 20px;
+}
+#call{
+	margin-top: 20px;
+	padding-bottom: 30px;
+} img{
+	height: 20px;
+	width: 20px;
+}
+#call span{
+	color: rgb(201, 178, 130);
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#html-show, #css-show, #js-show {
+  display: none;
+}
+
+#html-show:target, #css-show:target, #js-show:target {
+  display: block;
+  background-color: brown;
+}
+
